@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   keys_1.c                                           :+:      :+:    :+:   */
+/*   key_1.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gmp <gmp@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/02/25 18:00:30 by gmp               #+#    #+#             */
-/*   Updated: 2015/02/25 18:04:02 by gmp              ###   ########.fr       */
+/*   Created: 2015/02/27 09:14:50 by gmp               #+#    #+#             */
+/*   Updated: 2015/02/27 12:49:46 by gmp              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void 	key_p(void)
 	e = getEnv();
 	e->scale += 1;
 	expose_hook(e);
-	ft_putstr("P\n");	
+	ft_putstr("P\n");
 }
 
 void 	key_m(void)
@@ -31,7 +31,7 @@ void 	key_m(void)
 		return ;
 	e->scale -= 1;
 	expose_hook(e);
-	ft_putstr("P\n");	
+	ft_putstr("P\n");
 }
 
 void 	key_1(void)
@@ -39,9 +39,8 @@ void 	key_1(void)
 	t_env	*e;
 
 	e = getEnv();
-	e->perspective = 1;
 	expose_hook(e);
-	ft_putstr("P\n");	
+	ft_putstr("P\n");
 }
 
 void 	key_2(void)
@@ -49,7 +48,6 @@ void 	key_2(void)
 	t_env	*e;
 
 	e = getEnv();
-	e->perspective = 2;
 	expose_hook(e);
-	ft_putstr("P\n");	
+	ft_putstr("P\n");
 }
